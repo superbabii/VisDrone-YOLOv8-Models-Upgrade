@@ -21,23 +21,23 @@ These files are too large to upload directly to GitHub.
 
 ## Model Performance (Original YOLOv8 Models)
 
-| Model  | Size (pixels) | mAPval 50-95 | Speed CPU ONNX (ms) | Speed A100 TensorRT (ms) | Params (M) | FLOPs (B) |
-|--------|---------------|--------------|---------------------|--------------------------|------------|-----------|
-| YOLOv8n | 640           | 37.3         | 80.4                | 0.99                     | 3.2        | 8.7       |
-| YOLOv8s | 640           | 44.9         | 128.4               | 1.20                     | 11.2       | 28.6      |
-| YOLOv8m | 640           | 50.2         | 234.7               | 1.83                     | 25.9       | 78.9      |
-| YOLOv8l | 640           | 52.9         | 375.2               | 2.39                     | 43.7       | 165.2     |
-| YOLOv8x | 640           | 53.9         | 479.1               | 3.53                     | 68.2       | 257.8     |
+| Model  | Size (pixels) | mAPval 50-95 |
+|--------|---------------|--------------|
+| YOLOv8n | 640           | 37.3         |
+| YOLOv8s | 640           | 44.9         |
+| YOLOv8m | 640           | 50.2         |
+| YOLOv8l | 640           | 52.9         |
+| YOLOv8x | 640           | 53.9         |
 
 ## Model Performance (VisDrone-trained YOLOv8 Models)
 
-| Model  | Size (pixels) | Task              | mAPval 50 |
-|--------|------------|-------------------|-------------|
-| yolov8n-visdrone | 640    | object detection |  34.1     |
-| yolov8s-visdrone | 640    | object detection |  40.8     |
-| yolov8m-visdrone | 640    | object detection |  45.4     |
-| yolov8l-visdrone | 640    | object detection |  46.1     |
-| yolov8x-visdrone | 640    | object detection |  47.1     |
+| Model  | Size (pixels) | mAPval 50 |
+|--------|------------|-------------|
+| yolov8n-visdrone | 640    |  34.1     |
+| yolov8s-visdrone | 640    |  40.8     |
+| yolov8m-visdrone | 640    |  45.4     |
+| yolov8l-visdrone | 640    |  46.1     |
+| yolov8x-visdrone | 640    |  47.1     |
 
 ### Suitable Uses for YOLOv8 Models
 
