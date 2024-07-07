@@ -1,0 +1,54 @@
+# YOLOv8 Models Trained on VisDrone Dataset
+
+This repository contains YOLOv8 models trained on the VisDrone dataset for object detection. It also includes the original YOLOv8 models for reference and comparison.
+
+## Models
+
+The trained models are available in the `visdrone_models` directory. The original YOLOv8 models are available in the `original_models` directory.
+
+## Usage
+
+To use the models, you can download the `.pt` files and load them using the YOLOv8 framework.
+
+## Model Performance (Original YOLOv8 Models)
+
+| Model  | Size (pixels) | mAPval 50-95 | Speed CPU ONNX (ms) | Speed A100 TensorRT (ms) | Params (M) | FLOPs (B) |
+|--------|---------------|--------------|---------------------|--------------------------|------------|-----------|
+| YOLOv8n | 640           | 37.3         | 80.4                | 0.99                     | 3.2        | 8.7       |
+| YOLOv8s | 640           | 44.9         | 128.4               | 1.20                     | 11.2       | 28.6      |
+| YOLOv8m | 640           | 50.2         | 234.7               | 1.83                     | 25.9       | 78.9      |
+| YOLOv8l | 640           | 52.9         | 375.2               | 2.39                     | 43.7       | 165.2     |
+| YOLOv8x | 640           | 53.9         | 479.1               | 3.53                     | 68.2       | 257.8     |
+
+## Model Performance (VisDrone-trained YOLOv8 Models)
+
+| Model  | Input Size | Task              | Model Type | Score MAP50 |
+|--------|------------|-------------------|------------|-------------|
+| yolov8n-visdrone | 640    | object-detection | v8         | 0.34102     |
+| yolov8s-visdrone | 640    | object-detection | v8         | 0.40809     |
+| yolov8m-visdrone | 640    | object-detection | v8         | 0.45418     |
+| yolov8l-visdrone | 640    | object-detection | v8         | 0.46132     |
+| yolov8x-visdrone | 640    | object-detection | v8         | 0.47031     |
+
+### Suitable Uses for YOLOv8 Models
+
+- **YOLOv8n**: Designed for high-speed applications with low computational resources, making it suitable for edge devices.
+- **YOLOv8s**: Ideal for real-time applications requiring moderate computational power, such as real-time video processing.
+- **YOLOv8m**: A balanced model offering good performance and speed, suitable for general object detection tasks.
+- **YOLOv8l**: Provides high accuracy, making it suitable for detailed image analysis and complex environments.
+- **YOLOv8x**: The most accurate model, best suited for applications where the highest accuracy is critical, such as research and development in AI and computer vision.
+
+## Resources
+
+- VisDrone Dataset: [VisDrone-Dataset on GitHub](https://github.com/VisDrone/VisDrone-Dataset)
+- YOLOv8: [Ultralytics YOLOv8 on GitHub](https://github.com/ultralytics/ultralytics)
+- YOLOv8 Training Documentation: [YOLOv8 Training Documentation](https://docs.ultralytics.com/modes/train/#key-features-of-train-mode)
+- Using VisDrone with YOLOv8: [VisDrone Usage Documentation](https://docs.ultralytics.com/datasets/detect/visdrone/#usage)
+
+## Training
+
+The training scripts and configuration files are available in the `scripts` directory. For more details on how to train YOLOv8 models, refer to the YOLOv8 training documentation.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
