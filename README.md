@@ -10,6 +10,15 @@ The trained models are available in the `visdrone_models` directory. The origina
 
 To use the models, you can download the `.pt` files and load them using the YOLOv8 framework.
 
+### Model Files
+
+Due to GitHub's file size limitations (cannot upload files larger than 100MB), the model files are hosted externally. You can download them from the following links:
+
+- [best(yolov8x-visdrone).pt](https://drive.google.com/file/d/1unATgOABLt1C7RCQ_npGeksXX-jS4vjH/view?usp=sharing)
+- [yolov8x.pt](https://drive.google.com/file/d/1uGpYq6hvWmyFP5QuVEixAFHnjO8NBRiU/view?usp=sharing)
+
+These files are too large to upload directly to GitHub.
+
 ## Model Performance (Original YOLOv8 Models)
 
 | Model  | Size (pixels) | mAPval 50-95 | Speed CPU ONNX (ms) | Speed A100 TensorRT (ms) | Params (M) | FLOPs (B) |
