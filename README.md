@@ -32,7 +32,7 @@ These files are too large to upload directly to GitHub.
 ## Model Performance (VisDrone-trained YOLOv8 Models)
 
 | Model  | Size (pixels) | Task              | mAPval 50 |
-|--------|------------|-------------------|------------|-------------|
+|--------|------------|-------------------|-------------|
 | yolov8n-visdrone | 640    | object detection |  34.1     |
 | yolov8s-visdrone | 640    | object detection |  40.8     |
 | yolov8m-visdrone | 640    | object detection |  45.4     |
