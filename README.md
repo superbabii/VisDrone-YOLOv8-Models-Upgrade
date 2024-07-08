@@ -56,10 +56,6 @@ These files are too large to upload directly to GitHub.
 
 ## Training
 
-The training scripts and configuration files are available in the `scripts` directory. For more details on how to train YOLOv8 models, refer to the YOLOv8 training documentation.
-
-### Training Instructions
-
 To start training from a pretrained *.pt model, you can use the following command:
 
 ```bash
