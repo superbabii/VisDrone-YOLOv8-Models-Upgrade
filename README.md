@@ -58,6 +58,16 @@ These files are too large to upload directly to GitHub.
 
 The training scripts and configuration files are available in the `scripts` directory. For more details on how to train YOLOv8 models, refer to the YOLOv8 training documentation.
 
+### Training Instructions
+
+To start training from a pretrained *.pt model, you can use the following command:
+
+```bash
+yolo detect train data=VisDrone.yaml model=yolov8n.pt epochs=100 imgsz=640
+```
+
+For specific details, you can refer to [Using VisDrone with YOLOv8](https://docs.ultralytics.com/datasets/detect/visdrone/#usage) and [YOLOv8 Training Documentation](https://docs.ultralytics.com/modes/train/#key-features-of-train-mode).
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
